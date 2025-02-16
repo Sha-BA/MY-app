@@ -3,16 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Water Drop Logo</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Berry Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            direction: ltr;
+            text-align: left;
+        }
+        .container{
+            font-weight: bold;
+        }
+        .hero {
+            background: #f8f9fa;
+            padding: 50px 0;
+            text-align: left;
+        }
+        .hero img {
+            max-width: 100%;
+        }
+        .categories .card {
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
-     <div class="drop">
-        <ion-icon name="logo-apple"></ion-icon>
-     </div>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Berry</a>
+            <input class="form-control w-50" type="search" placeholder="Search for the products.">
+        </div>
+    </nav>
 
+    <section class="hero">
+        <div class="container">
+           <p>flat 30% off</p>
+           <h2>Explore Healthy 
+            <br>&Fresh Fruit</h2>
+            <button class="btn btn-primary">Show Now</button>
+        </div>
+    </section>
 
-     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <section class="container text-center mt-5">
+        <img src="download.jpg" alt="A woman is shopping">
+        
+    </section>
+
+    <section class="categories container mt-4 d-flex justify-content-center gap-3">
+        <div class="card col-5">
+            <h4>Bakery</h4>
+            <p>284 items</p>
+        </div>
+        <div class="card col-5">
+            <h4>Fast Food</h4>
+            <p>291 items</p>
+        </div>
+    </section>
+
+    <section class="container text-center mt-5">
+        <h4>Day of the deal</h4>
+        <p>Don't wait The time will never be just right</p>
+       <p>10 months 17 DAY 1:57:29</p>
+    </section>
 </body>
 </html>
